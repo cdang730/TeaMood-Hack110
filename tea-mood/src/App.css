@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   background-image: url('./assets/blank\ letter\ paper.jpg');
   background-size: cover; 
   background-position: center; 
@@ -31,7 +31,12 @@ body {
 .auth-wrapper input {
   border-color: black;
 }
-
+.tea-result {
+  text-align: center;
+}
+.encouragement{
+  text-align: center;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
