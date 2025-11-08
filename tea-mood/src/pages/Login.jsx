@@ -42,7 +42,7 @@ export default function Login() {
 
   if (!session) {
     return (
-      <div style={{ maxWidth: 420, margin: '2rem auto' }}>
+      <div className="auth-wrapper" style={{ maxWidth: 420, margin: '2rem auto'}}>
         <Auth
           supabaseClient={supabase}
           appearance={{ theme: ThemeSupa }}

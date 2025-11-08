@@ -5,16 +5,15 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
     position: flex;
-    background: #ffb3ff;
     height: 25px;
     display: flex;
     justify-content: space-between;
     padding: 0.2rem calc((100vw - 1000px) / 2);
     z-index: 12;
+
 `;
 
 export const NavLink = styled(Link)`
-    color: #808080;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -22,13 +21,12 @@ export const NavLink = styled(Link)`
     height: 100%;
     cursor: pointer;
     &.active {
-        color: #4d4dff;
+        color: #a088e8ff;
     }
 `;
 
 export const Bars = styled(Link)`
     display: none;
-    color: #808080;
     @media screen and (max-width: 768px) {
         display: block;
         position: absolute;

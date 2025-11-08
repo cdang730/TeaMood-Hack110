@@ -46,14 +46,14 @@ function NavBar() {
             <Nav>
                 <NavMenu>
                     <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : undefined)}>
-                        Home
+                        <h3>Home</h3>
                     </NavLink>
                     {!session && (
           <NavLink to="/Login">Sign In</NavLink>
         )}
                      {session && (
-          <NavLink as="button" onClick={handleLogout}>
-            Log Out
+          <NavLink onClick={handleLogout}>
+            <h3>Log Out</h3>
           </NavLink>
         )}
                 </NavMenu>
