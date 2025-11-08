@@ -67,6 +67,7 @@ function Home() {
       )
     }
     {result && <h2 className='tea-result'>{result.message}</h2>}
+    {result && <h2 className='tea-result'>{result.message2}</h2>}
     {result && <h2 className='encouragement'>{result.encouragement}</h2>}
     </>
   );

@@ -60,7 +60,9 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5174",
-                   "http://127.0.0.1:5174"],
+                   "http://127.0.0.1:5174",
+                   "http://127.0.0.1:5173",
+                   "http://localhost:5173"],
     allow_credentials=False, 
     allow_methods=["*"], 
     allow_headers=["*"],
@@ -89,8 +91,8 @@ def get_tea(mood_request: MoodRequest):
 
     return {"mood": mood, 
             "recommended_tea": recommended_tea,
-            "message": f"For your {mood} mood",
-            "message2" : f"try {recommended_tea}!",
+            "message": f"For your {mood} mood,",
+            "message2" : f"Try {recommended_tea}!",
             "encouragement": encouragement}
 
 
