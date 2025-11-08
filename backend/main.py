@@ -17,13 +17,12 @@ mood_to_tea = {
 
 app = FastAPI()
 
-# Allow your frontend to connect (CORS)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5174",
                    "http://127.0.0.1:5174"],
-    allow_credentials=False,
-    allow_methods=["*"],
+    allow_credentials=False, 
+    allow_methods=["*"], 
     allow_headers=["*"],
 )
 
@@ -31,9 +30,6 @@ app.add_middleware(
 class MoodRequest(BaseModel):
     mood: str
 
-@app.get("/")
-def read_root():
-    return {"message": "Welcome to TeaMood FastAPI backend!"}
 
 @app.post("/mood/")
 def get_tea(mood_request: MoodRequest):
