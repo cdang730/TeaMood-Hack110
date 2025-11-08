@@ -4,6 +4,7 @@ import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Nav = styled.nav`
+    position: flex;
     background: #ffb3ff;
     height: 25px;
     display: flex;
@@ -42,13 +43,13 @@ export const Bars = styled(Link)`
 export const NavMenu = styled.div`
     display: flex;
     align-items: center;
-    margin-right: -24px;
+    margin-right: 0px;
     /* Second Nav */
     /* margin-right: 24px; */
     /* Third Nav */
     /* width: 100vw;
 white-space: nowrap; */
-    @media screen and (max-width: 768px) {
+ /*   @media screen and (max-width: 768px) {
         display: none;
     }
 `;

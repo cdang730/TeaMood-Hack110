@@ -16,9 +16,9 @@ if (!globalThis.__supabase_client__) {
 }
 const supabase = globalThis.__supabase_client__
 
-
 function NavBar() {
     const [session, setSession] = useState(null);
+
     useEffect(() => {
     // Get current session
     supabase.auth.getSession().then(({ data: { session } }) => {
