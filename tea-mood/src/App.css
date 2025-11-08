@@ -15,6 +15,10 @@ body {
   padding: 2rem;
   text-align: center;
 }
+.login-message {
+  color:rgb(97, 49, 143);
+  font-size: 1.2em;
+}
 .submitButton {
   background-color: rgb(200, 190, 255);
   padding: 3px 15px;
@@ -34,6 +38,12 @@ body {
 }
 .auth-wrapper input {
   border-color: black;
+}
+.auth-wrapper a[href*="auth-forgot-password"] {
+  display: none !important;
+}
+.auth-wrapper a[href*="auth-sign-up"] {
+  color:rgb(38, 33, 44);
 }
 .tea-result {
   text-align: center;

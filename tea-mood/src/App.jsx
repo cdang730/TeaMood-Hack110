@@ -49,9 +49,9 @@ function Home() {
 
   return (
     <>
-      <h1>Tea Mood</h1>
+      <h1 className='intro'>Tea Mood</h1>
       {!session ? (
-        <p>Please log in to get personalized tea suggestions.</p>
+        <p className='login-message'>Please log in to get personalized tea suggestions.</p>
       ) : (
         <form onSubmit={handleSubmit}>
           <input

@@ -22,10 +22,7 @@ export const NavLink = styled(Link)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-    color: #8e6af9ff;
-    &.active {
-        color: #6336edff;
-    }
+    color: #5d4f82ff;
 `;
 
 export const Bars = styled(Link)`
