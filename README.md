@@ -5,6 +5,7 @@ Hack 110 hackathon project.
 
 ## AI usage
 - AI is only used to generate ideas of creating project. 
+- AI is used to list tea types and generate quotes for encouragement.
 - AI is not used to generate codes. 
 
 ## Used resources
