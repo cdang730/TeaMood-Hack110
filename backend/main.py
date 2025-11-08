@@ -78,21 +78,19 @@ def get_tea(mood_request: MoodRequest):
     teas = mood_to_tea.get(mood)
     quotes = encouragement_quotes.get(mood)
     
-    if quotes:
-        encouragement = random.choice(quotes) 
-    else: 
-        encouragement = "Keep going, you’ve got this!"
-    
-    if teas: 
+    if mood in mood_to_tea:
+        encouragement = random.choice(quotes)
         recommended_tea = random.choice(teas)
-    else:
-        # if not return defalt tea
+        message = f"For your {mood} mood, try {recommended_tea}!"
+    else: 
+        mood = "different"
+        encouragement = "Keep going, you’ve got this!"
         recommended_tea = "Jasmine Tea"
+        message = f"For your {mood} mood, try {recommended_tea}!"
 
     return {"mood": mood, 
             "recommended_tea": recommended_tea,
-            "message": f"For your {mood} mood,",
-            "message2" : f"try {recommended_tea}!",
+            "message": message,
             "encouragement": encouragement}
 
 
