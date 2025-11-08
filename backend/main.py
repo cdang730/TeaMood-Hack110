@@ -92,7 +92,7 @@ def get_tea(mood_request: MoodRequest):
     return {"mood": mood, 
             "recommended_tea": recommended_tea,
             "message": f"For your {mood} mood,",
-            "message2" : f"Try {recommended_tea}!",
+            "message2" : f"try {recommended_tea}!",
             "encouragement": encouragement}
 
 
