@@ -19,6 +19,9 @@ body {
   color:rgb(97, 49, 143);
   font-size: 1.2em;
 }
+.tea-image {
+  height: 10em;
+}
 .submitButton {
   background-color: rgb(200, 190, 255);
   padding: 3px 15px;

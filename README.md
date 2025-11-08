@@ -30,4 +30,7 @@ Example - Happy mood:
 ## Used resources
 - https://fastapi.tiangolo.com/tutorial/
 - https://www.w3schools.com/react/react_getstarted.asp
-- https://supabase.com/docs/reference/javascript/v1/auth-signin
+- https://supabase.com/docs/reference/javascript/v1/auth-
+- https://www.w3schools.com/css
+- https://www.geeksforgeeks.org/reactjs/create-a-responsive-navbar-using-reactjs/
+

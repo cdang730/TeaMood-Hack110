@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import NavBar from './components/Navbar.jsx'
 import Login from './pages/Login.jsx'
 import { createClient } from '@supabase/supabase-js'
+import TeaImage from './assets/tea.png'
 
 
 // Create a single supabase client per browser context. This avoids the
@@ -53,6 +54,7 @@ function Home() {
       {!session ? (
         <p className='login-message'>Please log in to get personalized tea suggestions.</p>
       ) : (
+        <div><img src={TeaImage} className='tea-image'/>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -64,7 +66,7 @@ function Home() {
           <br></br>
           <button type="submit" className='submitButton'>Get Tea</button>
         </form>
-      
+        </div>
       )
     }
     {result && <h2 className='tea-result'>{result.message}</h2>}
