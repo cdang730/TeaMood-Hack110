@@ -3,6 +3,7 @@ import { Nav, NavLink, NavMenu } from "./NavbarElements";
 import { useEffect, useState } from 'react'
 import { createClient } from '@supabase/supabase-js'
 
+
 // Create a single supabase client per browser context. This avoids the
 // "Multiple GoTrueClient instances" warning during HMR without adding files.
 const _supabase_url = import.meta.env.VITE_SUPABASE_URL
@@ -15,6 +16,7 @@ if (!globalThis.__supabase_client__) {
 }
 const supabase = globalThis.__supabase_client__
 
+
 function NavBar() {
     const [session, setSession] = useState(null);
     useEffect(() => {
@@ -23,6 +25,7 @@ function NavBar() {
       setSession(session);
     });
 
+
     // Listen for login/logout changes
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
       (_event, session) => {
@@ -30,8 +33,10 @@ function NavBar() {
       }
     );
 
+
     return () => subscription.unsubscribe();
   }, []);
+
 
     const handleLogout = async () => {
         await supabase.auth.signOut()
@@ -56,5 +61,6 @@ function NavBar() {
         </>
     );
 };
+
 
 export default NavBar;

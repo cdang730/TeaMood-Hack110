@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { createClient } from '@supabase/supabase-js'
 
-// HMR-safe singleton supabase client (keeps everything in one file)
+// HMR-safe singleton supabase client (keeps everything in this file)
 const _supabase_url = import.meta.env.VITE_SUPABASE_URL
 const _supabase_key = import.meta.env.VITE_SUPABASE_ANON_KEY
 if (!_supabase_url || !_supabase_key) {
