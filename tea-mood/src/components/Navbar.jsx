@@ -49,7 +49,7 @@ function NavBar() {
                         <h3>Home</h3>
                     </NavLink>
                     {!session && (
-          <NavLink to="/Login">Sign In</NavLink>
+          <NavLink to="/Login"><h3>Sign In</h3></NavLink>
         )}
                      {session && (
           <NavLink onClick={handleLogout}>

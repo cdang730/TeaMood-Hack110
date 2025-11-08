@@ -59,6 +59,7 @@ function Home() {
             value={mood}
             onChange={(e) => setMood(e.target.value)}
             placeholder="Enter your mood"
+            className='input-field'
           /><br></br>
           <br></br>
           <button type="submit" className='submitButton'>Get Tea</button>
