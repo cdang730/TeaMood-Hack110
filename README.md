@@ -17,9 +17,7 @@ Tea Mood gives user suggestions of what tea to drink with quotations as a encour
   <img src="./src/assets/main\ page.png" width="600" alt="TeaMood screenshot"/>
 </p>
 Example - Happy mood:
-<p align="center">
-  <img src="./src/assets/happy\ example.png" width="600" alt="TeaMood screenshot"/>
-</p>
+![TeaMood Logo](./src/assets/happy example.png)
 
 
 
