@@ -36,4 +36,6 @@ Example - Edge case:
 - https://supabase.com/docs/reference/javascript/v1/auth-
 - https://www.w3schools.com/css
 - https://www.geeksforgeeks.org/reactjs/create-a-responsive-navbar-using-reactjs/
+- https://pngtree.com/freepng/tea-cups-illustration_5301159.html for tea.png
+
 
