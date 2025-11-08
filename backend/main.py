@@ -13,8 +13,8 @@ mood_to_tea = {
     "sad": ["Chamomile Tea", "Rooibos Tea", "Honey Ginger Tea"],
     "relaxed": ["Oolong Tea", "Chrysanthemum Tea", "Hibiscus Tea"],
     "focused": ["Matcha", "Pu-erh Tea", "Ginseng Tea"], 
-    "angry": ["Green Tea"],
-    "anxious": ["Some tea"]
+    "angry": ["Hibiscus Tea","Rose Tea","Lavender Tea","Green Tea (lightly brewed)","Licorice Root Tea"],
+    "anxious": ["Passionflower Tea","Ashwagandha Tea","Rooibos Tea","Oat Straw Tea"]
 }
 
 encouragement_quotes = {
@@ -47,7 +47,8 @@ encouragement_quotes = {
         "Even miracles take a little time.", 
         "The flower that blooms in adversity is the most rare and beautiful of all.", 
         "The very things that hold you down are going to lift you up.", 
-        "The only thing predictable about life is its unpredictability.",     "Believe you can, then you will.",
+        "The only thing predictable about life is its unpredictability.",
+        "Believe you can, then you will.",
         "You see, when the world turns upside down, the best thing is to turn right along with it.", 
         "From failure, we learn, from success, not so much.", 
         "No matter how the wind howls, the mountain cannot bow to it."
@@ -78,7 +79,7 @@ def get_tea(mood_request: MoodRequest):
     if quotes:
         encouragement = random.choice(quotes) 
     else: 
-        quotes = "Keep going, you’ve got this!"
+        encouragement = "Keep going, you’ve got this!"
     
     if teas: 
         recommended_tea = random.choice(teas)
@@ -88,7 +89,8 @@ def get_tea(mood_request: MoodRequest):
 
     return {"mood": mood, 
             "recommended_tea": recommended_tea,
-            "message": f"For your {mood} mood, try {recommended_tea}!",
+            "message": f"For your {mood} mood",
+            "message2" : f"try {recommended_tea}!",
             "encouragement": encouragement}
 
 
