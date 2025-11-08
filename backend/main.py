@@ -4,6 +4,18 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import random
+from supabase import create_client, Client
+import os
+import random
+from dotenv import load_dotenv
+
+# Load .env
+load_dotenv()
+
+# Connect to Supabase
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_ANON_KEY = os.getenv("SUPABASE_ANON_KEY")
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_ANON_KEY)
 
 mood_to_tea = {
     "happy": ["Green Tea", "White Tea", "Jasmine Tea"],
@@ -40,7 +52,10 @@ def get_tea(mood_request: MoodRequest):
     else:
         # if not return defalt tea
         recommended_tea = "Jasmine Tea"
-    return {"mood": mood, "recommended_tea": recommended_tea, "message": f"For your {mood} mood, try {recommended_tea}!"}
+    data = {"mood": mood, "recommended_tea": recommended_tea}
+    response = supabase.table("moods").insert(data).execute()
+    return {"mood": mood, "recommended_tea": recommended_tea, "message": f"For your {mood} mood, try {recommended_tea}!", "saved": bool(response.data)}
+
 
 
 
