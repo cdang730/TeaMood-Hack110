@@ -11,13 +11,10 @@ Tea Mood gives user suggestions of what tea to drink with quotations as a encour
 - Default tea and encouragement when mood is not listed in backend.
 
 ## Preview
-<p align="center">
-  <img src="./src/assets/home\ page.png" width="600" alt="TeaMood screenshot"/>
-  <img src="./src/assets/sign\ in\ page.png" width="600" alt="TeaMood screenshot"/>
-  <img src="./src/assets/main\ page.png" width="600" alt="TeaMood screenshot"/>
-</p>
+
+
 Example - Happy mood:
-![Example](./tea-mood/src/assets/happy example.png)
+
 
 
 
