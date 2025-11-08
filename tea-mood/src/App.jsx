@@ -52,7 +52,10 @@ function Home() {
     <>
       <h1 className='intro'>Tea Mood</h1>
       {!session ? (
-        <p className='login-message'>Please log in to get personalized tea suggestions.</p>
+        <div>
+          <img src={TeaImage} className='tea-image'/>
+          <p className='login-message'>Please log in to get personalized tea suggestions.</p>
+        </div>
       ) : (
         <div><img src={TeaImage} className='tea-image'/>
         <form onSubmit={handleSubmit}>
