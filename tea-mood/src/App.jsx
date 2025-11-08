@@ -67,7 +67,7 @@ function Home() {
       )
     }
     {result && <h2 className='tea-result'>{result.message}</h2>}
-    {result && <h2 className='encouragement'>{result.encouragement}</h2>}
+    {result && <h2 className='encouragement' style={{ whiteSpace: "pre-line" }}>{result.encouragement}</h2>}
     </>
   );
 }

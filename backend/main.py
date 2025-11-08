@@ -21,37 +21,37 @@ encouragement_quotes = {
     "happy": [
         "Keep shining, your joy is contagious!",
         "Happiness looks good on you today!", 
-        "Our fate lives within us. You only have to be brave enough to see it.",
-        "Happiness is the richest thing we will ever own."
+        "Our fate lives within us. \nYou only have to be brave enough to see it.",
+        "Happiness is the richest \nthing we will ever own."
     ],
     "tired": [
         "Take a deep breath, you’ve got this!",
-        "Rest if you need it — your mind will thank you."
+        "Rest if you need it — \nyour mind will thank you."
     ],
     "stressed": [
-        "This too shall pass. You are stronger than you think.",
-        "Remember to take one step at a time."
+        "This too shall pass. \nYou are stronger than you think.",
+        "Remember to take one \nstep at a time."
     ], 
     "sad": [
-        "You are braver than you believe, stronger than you seem, and smarter than you think.",
-        "You must not let anyone define your limits because of where you come from. Your only limit is your soul.",
+        "You are braver than you believe, \nstronger than you seem, \nand smarter than you think.",
+        "You must not let anyone define \nyour limits because of where you \ncome from. Your only \nlimit is your soul.",
         "All it takes is faith and trust.", 
-        "The things that make me different are the things that make me.", 
-        "When life gets you down, do you wanna know what you've gotta do? Just keep swimming."
+        "The things that make me different \nare the things that make me.", 
+        "When life gets you down, \ndo you wanna know \nwhat you've gotta do? \nJust keep swimming."
     ], 
     "angry": [
-        "If you do your best each and every day, good things are sure to come your way.", 
-        "The past can hurt. But from the way I see it, you can either run from it, or learn from it."
+        "If you do your best each and every day, \ngood things are sure to come your way.", 
+        "The past can hurt. \nBut from the way I see it, \nyou can either run from it, \nor learn from it."
     ], 
     "anxious": [
         "Even miracles take a little time.", 
-        "The flower that blooms in adversity is the most rare and beautiful of all.", 
-        "The very things that hold you down are going to lift you up.", 
-        "The only thing predictable about life is its unpredictability.",
+        "The flower that blooms in adversity \nis the most rare and beautiful of all.", 
+        "The very things that hold you down \nare going to lift you up.", 
+        "The only thing predictable \nabout life is its unpredictability.",
         "Believe you can, then you will.",
-        "You see, when the world turns upside down, the best thing is to turn right along with it.", 
-        "From failure, we learn, from success, not so much.", 
-        "No matter how the wind howls, the mountain cannot bow to it."
+        "You see, when the world turns \nupside down, the best thing is \nto turn right along with it.", 
+        "From failure, we learn, \nfrom success, not so much.", 
+        "No matter how the wind howls, \nthe mountain cannot bow to it."
     ]
 }
 
@@ -89,7 +89,7 @@ def get_tea(mood_request: MoodRequest):
 
     return {"mood": mood, 
             "recommended_tea": recommended_tea,
-            "message": f"For your {mood} mood",
+            "message": f"For your {mood} mood,",
             "message2" : f"try {recommended_tea}!",
             "encouragement": encouragement}
 
