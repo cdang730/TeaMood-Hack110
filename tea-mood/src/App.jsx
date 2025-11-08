@@ -42,6 +42,9 @@ function Home() {
       // Get current session
       supabase.auth.getSession().then(({ data: { session } }) => {
         setSession(session);
+        if (!session){
+          setResult(null);
+        }
       });})
 
   return (
@@ -59,9 +62,11 @@ function Home() {
           />
           <button type="submit">Get Tea</button>
         </form>
-      )}
-      {result && <h2>{result.message}</h2>}
-      {result && <h2>{result.encouragement}</h2>}
+      
+      )
+    }
+    {result && <h2>{result.message}</h2>}
+    {result && <h2>{result.encouragement}</h2>}
     </>
   );
 }
