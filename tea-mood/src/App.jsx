@@ -33,9 +33,6 @@ function Home() {
     </>
   )
 }
-function App (){
-  
-}
 
 
 function NavBarApp(){
