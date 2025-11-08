@@ -1,3 +1,14 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-image: url('./assets/background\ image.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0); 
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
