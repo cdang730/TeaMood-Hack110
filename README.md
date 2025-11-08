@@ -12,14 +12,17 @@ Tea Mood gives the user suggestions of what tea to drink with quotations as enco
 
 ## Preview
  Before login:
-<img width="959" height="473" alt="home page" src="https://github.com/user-attachments/assets/6beeb14f-85b7-40fd-a820-ad8cf768561f" />  
+<img width="1919" height="942" alt="image" src="https://github.com/user-attachments/assets/389194c8-8820-48dd-87b9-46aecbd25455" />  
  Login Page:
-<img width="959" height="470" alt="sign in page" src="https://github.com/user-attachments/assets/6071ad6e-b8c7-4d0e-8759-3e542a5f4c96" />  
+<img width="1919" height="939" alt="image" src="https://github.com/user-attachments/assets/7ac3dcbc-4c5c-4b1a-9df0-6ef83b8d9892" />  
  After Login:
-<img width="959" height="470" alt="main page" src="https://github.com/user-attachments/assets/0765617d-d774-4faa-a48d-df1da8a855df" />  
+<img width="1919" height="941" alt="image" src="https://github.com/user-attachments/assets/46bbc175-10e2-4b3e-8b9b-9703f31f5c7d" />  
 
 Example - Happy mood:
-<img width="959" height="470" alt="happy example" src="https://github.com/user-attachments/assets/75c75dd5-3798-45a3-bb7c-7e6851d0cb7c" />  
+<img width="1914" height="946" alt="image" src="https://github.com/user-attachments/assets/b51186a9-2bec-4649-894c-97e77720d943" />   
+Example - Edge case:
+<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/dbc81250-5fbc-4917-b133-ac62a8828559" />   
+
 
 
 ## AI usage
