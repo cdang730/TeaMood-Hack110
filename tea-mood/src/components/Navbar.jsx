@@ -25,8 +25,6 @@ function NavBar() {
       setSession(session);
     });
 
-
-    // Listen for login/logout changes
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
       (_event, session) => {
         setSession(session);
@@ -45,7 +43,7 @@ function NavBar() {
         <>
             <Nav>
                 <NavMenu>
-                    <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : undefined)}>
+                    <NavLink to="/">
                         <h3>Home</h3>
                     </NavLink>
                     {!session && (

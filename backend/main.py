@@ -30,7 +30,8 @@ encouragement_quotes = {
     ],
     "tired": [
         "Take a deep breath, you’ve got this!",
-        "Rest if you need it — your mind will thank you."
+        "Rest if you need it—your mind will thank you.",
+        "The best weather comes after a storm."
     ],
     "stressed": [
         "This too shall pass. You are stronger than you think.",
@@ -40,7 +41,7 @@ encouragement_quotes = {
         "You are braver than you believe, stronger than you seem, and smarter than you think.",
         "You must not let anyone define your limits because of where you come from. Your only limit is your soul.",
         "All it takes is faith and trust.", 
-        "The things that make me different are the things that make me.", 
+        "The things that make me different are the things that make me me.", 
         "When life gets you down, do you wanna know what you've gotta do? Just keep swimming."
     ], 
     "mad": [
