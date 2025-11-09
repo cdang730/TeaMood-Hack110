@@ -13,8 +13,12 @@ mood_to_tea = {
     "sad": ["Chamomile Tea", "Rooibos Tea", "Honey Ginger Tea"],
     "relaxed": ["Oolong Tea", "Chrysanthemum Tea", "Hibiscus Tea"],
     "focused": ["Matcha", "Pu-erh Tea", "Ginseng Tea"], 
-    "angry": ["Hibiscus Tea","Rose Tea","Lavender Tea","Green Tea (lightly brewed)","Licorice Root Tea"],
-    "anxious": ["Passionflower Tea","Ashwagandha Tea","Rooibos Tea","Oat Straw Tea"]
+    "mad": ["Hibiscus Tea","Rose Tea","Lavender Tea","Green Tea (lightly brewed)","Licorice Root Tea"],
+    "anxious": ["Passionflower Tea","Ashwagandha Tea","Rooibos Tea","Oat Straw Tea"],
+    "annoyed": ["Masala Chai", "Ceylon Tea", "Burdock Root Tea"],
+    "excited": ["Dandelion Tea", "Earl Grey", "Kombucha Tea"],
+    "goofy": ["Nettle Tea", "Valerian Root Tea", "Darjeeling Tea"],
+    "confused": ["Turkish Tea", "Fenugreek Tea", "Assam Tea"]
 }
 
 encouragement_quotes = {
@@ -39,7 +43,7 @@ encouragement_quotes = {
         "The things that make me different are the things that make me.", 
         "When life gets you down, do you wanna know what you've gotta do? Just keep swimming."
     ], 
-    "angry": [
+    "mad": [
         "If you do your best each and every day, good things are sure to come your way.", 
         "The past can hurt. But from the way I see it, you can either run from it, or learn from it."
     ], 
@@ -52,6 +56,27 @@ encouragement_quotes = {
         "You see, when the world turns upside down, the best thing is to turn right along with it.", 
         "From failure, we learn, from success, not so much.", 
         "No matter how the wind howls, the mountain cannot bow to it."
+    ],
+    "annoyed":[
+        "All big waves will fade into tiny ripples.",
+        "What irritates you is often no bigger than a bug.",
+        "Some things are simply beyond your control; to escape, focus on what you can do."
+    ],
+    "excited":[
+        "Great things lie ahead of you!",
+        "The new day will dawn faster than you can blink.",
+        "Everything will be even greater than you expected!"
+    ],
+    "goofy":[
+        "Life is better with some humour!",
+        "You're never too old to do goofy stuff.",
+        "Instant gratification takes too long.",
+        "Accept who you are, unless you're a serial killer."
+    ],
+    "confused":[
+        "Follow your instincts and you will arrive to the right destination.",
+        "There are many paths to take; don't feel pressured to always choose the right one.",
+        "Sometimes, the best thing you can do when unsure is just ask!"
     ]
 }
 
